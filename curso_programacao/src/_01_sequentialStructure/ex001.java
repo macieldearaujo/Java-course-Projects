@@ -1,4 +1,4 @@
-package curso_programacao;
+package _01_sequentialStructure;
 
 import java.util.Locale;
 

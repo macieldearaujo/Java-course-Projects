@@ -1,4 +1,4 @@
-package curso_programacao;
+package _01_sequentialStructure;
 
 public class ex002 {
 
