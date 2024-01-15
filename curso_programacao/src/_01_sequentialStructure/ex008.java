@@ -4,6 +4,8 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ex008 {
+	
+	// You'll can check the resolution on : https://github.com/acenelio/nivelamento-java/blob/master/src/uri1002.java
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
