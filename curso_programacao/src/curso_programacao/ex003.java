@@ -17,7 +17,7 @@ public class ex003 {
 		inteiro = sc.next().charAt(0);
 		System.out.printf("Você digitou %s%n", inteiro);
 		
-		// Int
+		// Char
 		char caractere;
 		
 		System.out.println("Digite um caractere:");
