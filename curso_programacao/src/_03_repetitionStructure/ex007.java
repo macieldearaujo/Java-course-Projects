@@ -15,6 +15,8 @@ public class ex007 {
 				System.out.println(i);
 			}
 		}
+		
+		sc.close();
 	}
 
 }
