@@ -18,6 +18,7 @@ public class ex001 {
 			System.out.println("The 6th bit is false!");
 		}
 		
+		sc.close();		
 	}
 
 }
