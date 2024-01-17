@@ -24,7 +24,7 @@ public class ex009 {
 			v2 = sc.nextDouble();
 			v3 = sc.nextDouble();
 			
-			double media = (v1*2.0 + v2*3.0 + v3*5.0) / (2 + 3 + 5);
+			double media = (v1*2.0 + v2*3.0 + v3*5.0) / 10;
 			System.out.printf("%.1f%n", media);
 		}
 		
