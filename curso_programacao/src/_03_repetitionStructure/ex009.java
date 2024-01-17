@@ -13,14 +13,20 @@ public class ex009 {
 		System.out.println("Digite um valor de repetições:");
 		int quant = sc.nextInt();
 		
+		double v1 = 0;
+		double v2 = 0;
+		double v3 = 0;
+		
 		System.out.println("Digite " + quant + " valores abaixo:");
-		double v1 = sc.nextDouble();
-		double v2 = sc.nextDouble();
-		double v3 = sc.nextDouble();
 		
-		double media = (v1*2 + v2*3 + v3*5) / (2 + 3 + 5);
-		
-		System.out.printf("%.1f", media);
+		for(int i = 0; i < quant; i++) {
+			v1 = sc.nextDouble();
+			v2 = sc.nextDouble();
+			v3 = sc.nextDouble();
+			
+			double media = (v1*2.0 + v2*3.0 + v3*5.0) / (2 + 3 + 5);
+			System.out.printf("%.1f%n", media);
+		}
 		
 		sc.close();
 	}
