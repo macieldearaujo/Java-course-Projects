@@ -24,13 +24,12 @@ public class Program {
 		x.b = sc.nextDouble();
 		x.c = sc.nextDouble();
 		
-		areaX = x.calculateArea();
-		
 		System.out.println("Enter the measures of triangle Y:");
 		y.a = sc.nextDouble();
 		y.b = sc.nextDouble();
 		y.c = sc.nextDouble();
 		
+		areaX = x.calculateArea();
 		areaY = y.calculateArea();
 		
 		System.out.printf("Triangle X area: %.4f%n", areaX);
