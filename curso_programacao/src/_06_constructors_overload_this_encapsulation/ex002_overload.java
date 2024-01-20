@@ -3,9 +3,9 @@ package _06_constructors_overload_this_encapsulation;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Item;
+import entities.Product2;
 
-public class ex001_constructors {
+public class ex002_overload {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,8 +22,13 @@ public class ex001_constructors {
 
 		System.out.print("Quantity in stock:  ");
 		int quantity = sc.nextInt();
-
-		Item product = new Item(name, price);
+		
+		Product2 product = new Product2(name, price, quantity);
+		
+		product.setName("computer");
+		System.out.println("Updated name:  " + product.getName());
+		product.setPrice(1200);
+		System.out.println("Updated price:  " + product.getPrice());
 		
 		System.out.println();
 		System.out.println("Product data: " + product);
