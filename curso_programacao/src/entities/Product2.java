@@ -14,32 +14,31 @@ public class Product2 {
 		this.quantity = quantity;
 	}
 	
-	public Product2(String name, double price) { // SOBRECARGA DO CONSTRUCTOR
+	public Product2(String name, double price) {
 		this.name = name;
 		this.price = price;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
+		}
+
 	public String getName() {
 		return name;
 	}
-	
-	
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public double getPrice() {
 		return price;
 	}
-	
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
 	public int getQuantity() {
 		return quantity;
 	}
-	
-	public void setPrice(double price) {
-		this.price = price;
-	}	
-	
+
 	public double totalValueinStock() {
 		return quantity * price;
 	}
