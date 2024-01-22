@@ -3,7 +3,7 @@ package _07_arrays_lists_memory;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ex002 {
+public class ex002_array {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
