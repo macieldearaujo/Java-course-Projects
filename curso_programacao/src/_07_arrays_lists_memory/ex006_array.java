@@ -36,10 +36,7 @@ public class ex006_array {
 		for (int i = 0; i < n; i++) {
 			System.out.println(vectorC[i]);
 		}
-		
-		
 
 		sc.close();
 	}
-
 }
