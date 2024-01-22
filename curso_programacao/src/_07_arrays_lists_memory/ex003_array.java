@@ -19,7 +19,7 @@ public class ex003_array {
 		double sum = 0, perc = 0;
 
 		for (int i = 0; i < person.length; i++) { // input to get data
-			System.out.println((i + 1) + "a person's data: ");
+			System.out.println((i + 1) + "st person's data: ");
 			sc.nextLine();
 			System.out.print("Name: ");
 			String name = sc.nextLine();
