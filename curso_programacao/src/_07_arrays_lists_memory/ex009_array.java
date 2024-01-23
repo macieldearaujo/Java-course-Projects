@@ -38,6 +38,7 @@ public class ex009_array {
 		}
 		
 		System.out.printf("OLDER PERSON: %s%n", biggerAgeName);
+		sc.close();
 	}
 
 }
