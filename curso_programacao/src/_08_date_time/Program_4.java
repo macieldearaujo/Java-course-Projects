@@ -23,13 +23,13 @@ public class Program_4 {
 		
 		LocalDateTime pastWeekDateTime = d02.minusDays(7);
 		LocalDateTime nextWeekDateTime = d02.plusDays(7);
-		
+	
 		System.out.println("pastWeek(time) = " + pastWeekDateTime);
 		System.out.println("nextWeek(time) = " + nextWeekDateTime);
 		
 		Instant pastWeekInstant = d03.minus(7, ChronoUnit.DAYS);
 		Instant nextWeekInstant = d03.plus(7, ChronoUnit.DAYS);
-		
+		 
 		System.out.println("pastWeekInstant = " + pastWeekInstant);
 		System.out.println("nextWeekInstant = " + nextWeekInstant);
 
