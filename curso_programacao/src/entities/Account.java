@@ -6,15 +6,13 @@ public class Account {
 	private String holder;
 	private double balance;
 	
-	public Account(int account, String holder, double initialDeposit) {
-		this.account = account;
-		this.holder = holder;
-		deposit(initialDeposit);
+	public Account() {
 	}
 	
-	public Account(int account, String holder) {
+	public Account(int account, String holder, double balance) {
 		this.account = account;
 		this.holder = holder;
+		this.balance = balance;
 	}
 
 	public int getAccount() {

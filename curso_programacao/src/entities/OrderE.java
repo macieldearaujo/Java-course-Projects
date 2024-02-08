@@ -77,7 +77,7 @@ public class OrderE {
 		for(OrderItem oi : products) {
 			st.append(oi.getProduct().getName() + " $" + String.format("%.2f", oi.getPrice()) + " Quantity: " + oi.getQuantity() + ", Subtotal: $" + String.format("%.2f", oi.subTotal()) + "\n");
 		}
-		st.append("Total price: " + String.format("%.2f", total());
+		st.append("Total price: " + String.format("%.2f", total()));
 		return st.toString();
 	}
 }
