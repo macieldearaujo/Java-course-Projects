@@ -29,7 +29,7 @@ public class ex003 {
 			double initialDepositValue = sc.nextDouble();
 			ac = new Account(account, holder, initialDepositValue);
 		} else {
-			ac = new Account(account, holder);
+			ac = new Account(account, holder, 6800);
 		}
 		
 		System.out.printf("%nAccount data: %n%s%n", ac);
