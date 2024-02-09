@@ -17,6 +17,7 @@ public class Program_2 {
 		Account acc2 = new BussinessAccount(1502, "Maria", 0.0, 500.0);
 		Account acc3 = new SavingAccount(1505, "Alexandre", 0.0, 0.01);
 		
+		BussinessAccount baa1 = new BussinessAccount();
 		// DOWNCASTING
 		BussinessAccount acc4 = (BussinessAccount)acc2; // In case you want use a function that is in a subclass in a superclass you have to downcasting
 		acc4.loan(1500.0); // Just like this
