@@ -4,7 +4,7 @@ public class Account {
 	
 	private int account;
 	private String holder;
-	protected double balance;
+	protected double balance;  ///  ******************
 	
 	public Account() {
 	}
