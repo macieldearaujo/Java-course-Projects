@@ -25,4 +25,9 @@ public class SavingAccount extends Account {
 		balance += balance * interestRate;
 	}
 	
+	@Override
+	public final void withdraw(double amount) { // Define an entity that can only be assigned once. Once a final variable has been assigned, it always contains the same value.
+		balance -= amount;
+	}
+	
 }
