@@ -1,5 +1,8 @@
 package _10_polymorphism;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Employee2;
@@ -10,7 +13,10 @@ public class ExSolved_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		
+		List<Employee2> employeeList = new ArrayList<>();
 		
 		System.out.print("Enter the number of employees: ");
 		int n = sc.nextInt();
@@ -28,21 +34,21 @@ public class ExSolved_1 {
 			Double valuePerHour = sc.nextDouble();
 			
 			if(outsourced != 'y') {
-				Employee2 emp = new Employee2(name, hours, valuePerHour);
+				employeeList.add(new Employee2(name, hours, valuePerHour));
 			} else {
 				System.out.print("Additional charge: ");
 				double aditionalCharge = sc.nextDouble();
-				Employee2 emp = new OutsourcedEmployee(name, hours, valuePerHour, aditionalCharge);
+				employeeList.add(new OutsourcedEmployee(name, hours, valuePerHour, aditionalCharge));
 			}
-			
 		}
 		
 		System.out.println();
 		System.out.println("PAYMENTS: ");
-		System.out.println(Employee2.toString());
 		
+		for(Employee2 emp : employeeList) {
+			System.out.println(emp.getName() + " - $ " + String.format("%.2f", emp.payment()));
+		}
 		
 		sc.close();
 	}
-
 }
