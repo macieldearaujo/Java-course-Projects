@@ -37,7 +37,6 @@ public class Ex001 {
 			System.out.print("Price: ");
 			double price = sc.nextDouble();
 
-			
 			if(ch == 'c') {
 				products.add(new Produto(name, price));
 			} else if(ch == 'u') {
@@ -58,7 +57,6 @@ public class Ex001 {
 		for(Produto prod : products) {
 			System.out.println(prod.priceTag());
 		}
-		
 		
 		sc.close();
 	}
