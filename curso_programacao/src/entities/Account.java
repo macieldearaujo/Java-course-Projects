@@ -1,6 +1,6 @@
 package entities;
 
-public class Account {
+public class Account { // Abstract class
 	
 	private int account;
 	private String holder;
