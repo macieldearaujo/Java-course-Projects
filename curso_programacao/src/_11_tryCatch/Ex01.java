@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.UpdatedAccount;
-import model.exceptions.DomainException;
+import model.exceptions.BussinessException;
 
 public class Ex01 {
 
@@ -37,11 +37,10 @@ public class Ex01 {
 			System.out.print("New balance: " + String.format("%.2f", acc.getBalance()));
 		} catch(InputMismatchException e) {
 			System.out.println("Error: only numbers are valid");
-		} catch(DomainException e) {
+		} catch(BussinessException e) {
 			System.out.println(e.getMessage());
 		}
 		
 		sc.close();
 	}
-
 }
