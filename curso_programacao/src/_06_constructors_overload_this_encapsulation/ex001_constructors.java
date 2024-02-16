@@ -3,7 +3,7 @@ package _06_constructors_overload_this_encapsulation;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Item;
+import model.entities.Item;
 
 public class ex001_constructors {
 

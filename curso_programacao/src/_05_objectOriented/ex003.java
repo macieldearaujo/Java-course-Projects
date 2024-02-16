@@ -3,7 +3,7 @@ package _05_objectOriented;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Rectangle;
+import model.entities.Rectangle;
 
 public class ex003 {
 

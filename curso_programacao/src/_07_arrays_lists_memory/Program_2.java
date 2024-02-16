@@ -3,7 +3,7 @@ package _07_arrays_lists_memory;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Product_2;
+import model.entities.Product_2;
 
 public class Program_2 {
 	public static void main(String[] args) {

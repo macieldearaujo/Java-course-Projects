@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Employee2;
-import entities.OutsourcedEmployee;
+import model.entities.Employee2;
+import model.entities.OutsourcedEmployee;
 
 public class ExSolved_1 {
 

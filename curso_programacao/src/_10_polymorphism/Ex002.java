@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.LegalPerson;
-import entities.NaturalPerson;
-import entities.TaxPayer;
+import model.entities.LegalPerson;
+import model.entities.NaturalPerson;
+import model.entities.TaxPayer;
 
 public class Ex002 {
 

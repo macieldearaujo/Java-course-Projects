@@ -3,8 +3,8 @@ package _09_enum;
 import java.util.Date;
 import java.util.Scanner;
 
-import entities.OrderProduct;
-import entities.enums.OrderStatus;
+import model.entities.OrderProduct;
+import model.enums.OrderStatus;
 
 public class Program_1 {
 

@@ -6,11 +6,11 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Client;
-import entities.OrderE;
-import entities.OrderItem;
-import entities.ProductE;
-import entities.enums.OrderStatus;
+import model.entities.Client;
+import model.entities.OrderE;
+import model.entities.OrderItem;
+import model.entities.ProductE;
+import model.enums.OrderStatus;
 
 public class ex001 {
 

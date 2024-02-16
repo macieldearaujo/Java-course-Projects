@@ -3,7 +3,7 @@ package _05_objectOriented;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Employee;
+import model.entities.Employee;
 
 public class ex004 {
 

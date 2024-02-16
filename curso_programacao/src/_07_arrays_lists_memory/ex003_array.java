@@ -3,7 +3,7 @@ package _07_arrays_lists_memory;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Personal_info;
+import model.entities.Personal_info;
 
 public class ex003_array {
 

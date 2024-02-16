@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import javax.swing.text.Position;
 
-import entities.Registration;
+import model.entities.Registration;
 
 public class ex012_array {
 

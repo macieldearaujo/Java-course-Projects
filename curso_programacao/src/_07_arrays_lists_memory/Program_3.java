@@ -3,7 +3,7 @@ package _07_arrays_lists_memory;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.StudentHotel;
+import model.entities.StudentHotel;
 
 public class Program_3 {
 

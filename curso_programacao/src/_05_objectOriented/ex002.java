@@ -3,7 +3,7 @@ package _05_objectOriented;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Product;
+import model.entities.Product;
 
 public class ex002 {
 

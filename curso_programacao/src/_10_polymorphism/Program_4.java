@@ -1,7 +1,7 @@
 package _10_polymorphism;
 
-import entities.Account;
-import entities.SavingAccount;
+import model.entities.Account;
+import model.entities.SavingAccount;
 
 public class Program_4 {
 

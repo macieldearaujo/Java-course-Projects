@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import entities.Account;
-import entities.BussinessAccount;
-import entities.SavingAccount;
+import model.entities.Account;
+import model.entities.BussinessAccount;
+import model.entities.SavingAccount;
 
 public class Program_5 {
 

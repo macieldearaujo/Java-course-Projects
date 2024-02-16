@@ -1,6 +1,6 @@
 package _10_polymorphism;
 
-import entities.BussinessAccount;
+import model.entities.BussinessAccount;
 
 public class Program_1 {
 

@@ -1,8 +1,8 @@
 package _10_polymorphism;
 
-import entities.Account;
-import entities.BussinessAccount;
-import entities.SavingAccount;
+import model.entities.Account;
+import model.entities.BussinessAccount;
+import model.entities.SavingAccount;
 
 public class Program_2 {
 

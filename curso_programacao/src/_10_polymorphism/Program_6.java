@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Abs_rectangle;
-import entities.Circle;
-import entities.Shape;
-import entities.enums.Color;
+import model.entities.Abs_rectangle;
+import model.entities.Circle;
+import model.entities.Shape;
+import model.enums.Color;
 
 public class Program_6 {
 
