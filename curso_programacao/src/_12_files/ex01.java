@@ -26,9 +26,35 @@ public class ex01 {
 		File sourceFile = new File(sourceFileStr);
 		String sourceFolderStr = sourceFile.getParent();
 		
-		boolean sucess = new File(sourceFolderStr + "/out").mkdir();
+		boolean sucess = new File(sourceFolderStr + "\\out").mkdir();
 		
-		System.out.println("Folder created: " + sucess);
+		String targetFileStr = sourceFolderStr + "\\out\\summary.csv";
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(sourceFileStr));
+			BufferedWriter bw = new BufferedWriter(new FileWriter(targetFileStr))) {
+			
+			String line = br.readLine();
+			
+			while(line != null) {
+				String[] fields = line.split(",");
+				
+				String name = fields[0];
+				double price = Double.parseDouble(fields[1]);
+				int quantity = Integer.parseInt(fields[2]);
+				
+				products.add(new Product(name, price, quantity));
+				
+				line = br.readLine();
+			}
+			
+			for(Product prod : products) {
+				bw.write(prod.getName() + "," + String.format("%.2f", prod.totalValueinStock()));
+				bw.newLine();
+			}
+			
+		} catch(IOException e) {
+			System.out.println("Error writing file: " + e.getMessage());
+		}
 		
 		sc.close();
 	}
