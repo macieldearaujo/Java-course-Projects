@@ -28,19 +28,19 @@ public class Ex001 {
 		System.out.print("Valor do contrato: ");
 		double contractValue = sc.nextDouble();
 		
-		Contract contract = new Contract(number, date, contractValue);
+		Contract obj = new Contract(number, date, contractValue);
 		
 		System.out.print("Entre com o numero de parcelas: ");
 		int numberInstallment = sc.nextInt();
 		
 		ContractService contractService = new ContractService(new PaypalService());
 	
-		contractService.processPayment(contract, numberInstallment);
+		contractService.processPayment(obj, numberInstallment);
 		
-		 List<Installament> list = contract.getList();
+		 List<Installament> list = obj.getList();
 		 
 		 for(Installament installament : list) {
-			 System.out.println(installament.getDueDate().format(fmt) + " - " + String.format("%.2f", installament.getAmount()));
+			 System.out.println(installament);
 		 }
 		
 		sc.close();
