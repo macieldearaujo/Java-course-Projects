@@ -46,10 +46,6 @@ public class Contract {
 		return instalments;
 	}
 
-	public void setInstalments(List<Installament> instalments) {
-		this.instalments = instalments;
-	}
-
 	public void addinstalments(Installament installament) {
 		instalments.add(installament);
 	}
