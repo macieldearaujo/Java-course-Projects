@@ -30,6 +30,7 @@ public class Installament {
 		this.amount = amount;
 	}
 	
+	@Override
 	public String toString() {
 		return getDueDate().format(fmt) + " - " + String.format("%.2f", getAmount());
 	}
