@@ -4,11 +4,10 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Installament {
+	private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	
 	private LocalDate dueDate;
 	private Double amount;
-	
-	private DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	
 	public Installament(LocalDate dueDate, Double amount) {
 		this.dueDate = dueDate;
