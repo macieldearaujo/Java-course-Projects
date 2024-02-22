@@ -20,7 +20,7 @@ public class ContractService {
 			double paymentFee = paymentService.paymentFee(totalValue + interest);
 			totalValue += paymentFee + interest;			
 			LocalDate dueDate = contract.getDate().plusMonths(i);			
-			contract.addList(new Installament(dueDate, totalValue));
+			contract.getInstalments().add(new Installament(dueDate, totalValue));
 		}
 	}
 }

@@ -37,7 +37,7 @@ public class Ex001 {
 	
 		contractService.processPayment(obj, numberInstallment);
 		
-		 List<Installament> list = obj.getList();
+		 List<Installament> list = obj.getInstalments();
 		 
 		 for(Installament installament : list) {
 			 System.out.println(installament);
