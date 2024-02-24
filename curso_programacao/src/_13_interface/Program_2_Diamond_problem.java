@@ -12,5 +12,4 @@ public class Program_2_Diamond_problem {
 		System.out.println("Scanner result: " + c.scan());
 		
 	}
-
 }
