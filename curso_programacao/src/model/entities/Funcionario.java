@@ -1,6 +1,6 @@
 package model.entities;
 
-public class Funcionario implements Comparable<Funcionario> { // *******************
+public class Funcionario implements Comparable<Funcionario> { // ********************
 
 	private String name;
 	private Double salary;
