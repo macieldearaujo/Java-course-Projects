@@ -15,7 +15,7 @@ public class Program_2 {
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
-		String path = "C:\\\\temp\\\\testing_files\\\\generics.csv";
+		String path = "C:\\temp\\testing_files\\generics.csv";
 		List<ProductGenerics> list = new ArrayList<>();
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
