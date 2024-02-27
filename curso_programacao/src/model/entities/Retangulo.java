@@ -3,10 +3,10 @@ package model.entities;
 import model.enums.Color;
 
 public class Retangulo extends Abst_Forma {
-	
-private Double width;
-private Double height;
-	
+
+	private Double width;
+	private Double height;
+
 	public Retangulo(Color color, Double width, Double height) {
 		super(color);
 		this.width = width;
