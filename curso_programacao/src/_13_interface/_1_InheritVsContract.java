@@ -5,7 +5,7 @@ import model.entities.Circulo;
 import model.entities.Retangulo;
 import model.enums.Color;
 
-public class Program_1 {
+public class _1_InheritVsContract {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,6 +17,5 @@ public class Program_1 {
 		System.out.println("Circle area: " + String.format("%.3f", s1.area()));
 		System.out.println("Rectangle color: " + s2.getColor());
 		System.out.println("Rectangle area: " + String.format("%.3f", s2.area()));
-		
 	}
 }

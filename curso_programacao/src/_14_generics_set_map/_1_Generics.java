@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import model.services.PrintService;
 
-public class Program_1 {
+public class _1_Generics {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -6,7 +6,7 @@ import java.util.Scanner;
 import model.services.InterestService;
 import model.services.UsaInterestService;
 
-public class Program_4 {
+public class DefaultMethods {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -27,5 +27,4 @@ public class Program_4 {
 		
 		sc.close();
 	}
-
 }

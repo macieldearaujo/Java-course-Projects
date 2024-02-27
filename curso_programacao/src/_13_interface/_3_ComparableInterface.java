@@ -9,7 +9,7 @@ import java.util.List;
 
 import model.entities.Funcionario;
 
-public class Program_3 {
+public class _3_ComparableInterface {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

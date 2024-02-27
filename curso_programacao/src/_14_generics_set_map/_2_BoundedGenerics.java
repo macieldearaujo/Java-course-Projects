@@ -10,10 +10,9 @@ import java.util.Locale;
 import model.entities.ProductGenerics;
 import model.services.CalculationService;
 
-public class Program_2 {
+public class _2_BoundedGenerics {
 
 	public static void main(String[] args) {
-		
 		Locale.setDefault(Locale.US);
 		String path = "C:\\temp\\testing_files\\generics.csv";
 		List<ProductGenerics> list = new ArrayList<>();

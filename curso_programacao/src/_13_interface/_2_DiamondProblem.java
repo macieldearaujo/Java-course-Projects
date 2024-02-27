@@ -2,7 +2,7 @@ package _13_interface;
 
 import model.entities.ComboDevice;
 
-public class Program_2_Diamond_problem {
+public class _2_DiamondProblem {
 
 	public static void main(String[] args) {
 
