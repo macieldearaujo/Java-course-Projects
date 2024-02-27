@@ -6,8 +6,7 @@ import java.util.Set;
 public class _7_Set {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		Set<String> set = new HashSet<>(); // HashSet, TreeSet and LinkedSet
 		
 		set.add("Tv");
