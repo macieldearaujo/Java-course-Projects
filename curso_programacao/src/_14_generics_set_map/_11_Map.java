@@ -15,7 +15,7 @@ public class _11_Map {
 		cookies.put("phone", "99711122");
 		
 		cookies.remove("email");
-		cookies.put("phone", "99711133"); // overlay - the last value
+		cookies.put("phone", "99711133"); // overlay - the last value will be overlaid
 		
 		System.out.println("ALL COOKIES:");
 		for(String key : cookies.keySet()) {
