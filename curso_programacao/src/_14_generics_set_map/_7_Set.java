@@ -13,6 +13,8 @@ public class _7_Set {
 		set.add("Notebook");
 		set.add("Tablet");
 		
+		set.removeIf(x -> x.charAt(0) == 'T'); // predicate
+		
 		System.out.println(set.contains("Notebook"));
 		
 		for(String p : set) {
