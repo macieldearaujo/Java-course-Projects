@@ -1,5 +1,7 @@
 package model.entities;
 
+import java.util.Objects;
+
 public class Product {
 
 	public String name;
@@ -54,5 +56,23 @@ public class Product {
 				+ ", " + quantity 
 				+ " units, Total: $ " 
 				+ String.format("%.2f", totalValueinStock());
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, price);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		return Objects.equals(name, other.name)
+				&& Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price);
 	}
 }
