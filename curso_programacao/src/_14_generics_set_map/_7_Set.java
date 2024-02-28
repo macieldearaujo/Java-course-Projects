@@ -9,7 +9,7 @@ public class _7_Set {
 		
 		Set<String> set = new HashSet<>(); // HashSet, TreeSet and LinkedSet
 		
-		set.add("Tv");
+		set.add("Tv"); // Is similar to list
 		set.add("Notebook");
 		set.add("Tablet");
 		
