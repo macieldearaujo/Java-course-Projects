@@ -5,7 +5,7 @@ import java.util.Set;
 
 import model.entities.Product;
 
-public class _8_Set {
+public class _08_Set {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

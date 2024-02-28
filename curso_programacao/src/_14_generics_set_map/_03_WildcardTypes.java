@@ -3,7 +3,7 @@ package _14_generics_set_map;
 import java.util.Arrays;
 import java.util.List;
 
-public class _3_WildcardTypes {
+public class _03_WildcardTypes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

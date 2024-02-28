@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class _5_BoundedWildcardTypes {
+public class _05_BoundedWildcardTypes {
 	public static void main(String[] args) {
 
 		List<Integer> myInts = Arrays.asList(1, 2, 3, 4);

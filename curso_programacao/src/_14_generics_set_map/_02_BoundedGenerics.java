@@ -10,7 +10,7 @@ import java.util.Locale;
 import model.entities.ProductGenerics;
 import model.services.CalculationService;
 
-public class _2_BoundedGenerics {
+public class _02_BoundedGenerics {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);

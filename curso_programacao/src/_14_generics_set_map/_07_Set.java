@@ -3,7 +3,7 @@ package _14_generics_set_map;
 import java.util.HashSet;
 import java.util.Set;
 
-public class _7_Set {
+public class _07_Set {
 
 	public static void main(String[] args) {
 		

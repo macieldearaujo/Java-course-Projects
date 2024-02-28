@@ -2,7 +2,7 @@ package _14_generics_set_map;
 
 import model.entities.Cliente;
 
-public class _6_HashCode_Equals {
+public class _06_HashCode_Equals {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

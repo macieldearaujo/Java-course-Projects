@@ -7,7 +7,7 @@ import model.entities.Circulo2;
 import model.entities.Formato;
 import model.entities.Retangulo2;
 
-public class _4_BoundedWildcardTypes {
+public class _04_BoundedWildcardTypes {
 
 	public static void main(String[] args) {
 

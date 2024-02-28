@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 import model.entities.Tv;
 
-public class _9_TreeSet {
+public class _09_TreeSet {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
