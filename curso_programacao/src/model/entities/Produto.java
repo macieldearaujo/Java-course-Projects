@@ -51,4 +51,8 @@ public class Produto implements Comparable<Produto>{
 	public int compareTo(Produto other) {
 		return name.compareTo(other.getName());
 	}
+	
+	public String toString() {
+		return "Produto [name=" + getName() + ", price=" + String.format("%.2f", getPrice()) + "]";
+	}
 }
