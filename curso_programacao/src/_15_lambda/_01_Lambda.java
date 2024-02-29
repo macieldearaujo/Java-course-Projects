@@ -1,6 +1,7 @@
 package _15_lambda;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import model.entities.Produto;
@@ -20,7 +21,15 @@ public class _01_Lambda {
 		list.add(p2);
 		list.add(p3);
 
-		list.sort(new MyComparator());
+		Comparator<Produto> comp = new Comparator<Produto>() {
+			@Override
+			public int compare(Produto o1, Produto o2) {
+				return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
+			}
+			
+		};
+		
+		list.sort(comp);
 
 		for (Produto prod : list) {
 			System.out.println(prod);
