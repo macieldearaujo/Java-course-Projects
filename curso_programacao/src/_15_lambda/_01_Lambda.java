@@ -21,9 +21,7 @@ public class _01_Lambda {
 		list.add(p2);
 		list.add(p3);
 
-		Comparator<Produto> comp = (o1, o2) -> {
-				return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
-		};
+		Comparator<Produto> comp = (o1, o2) -> o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
 		
 		list.sort(comp);
 
