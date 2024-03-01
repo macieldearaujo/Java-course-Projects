@@ -21,7 +21,7 @@ public class _04_Function {
 		list.add(new Produto("Case", 80.90));
 		list.add(new Produto("Mouse", 50.00));
 		
-		Function<Produto, String> names = x -> x.getName().toUpperCase();
+		Function<Produto, String> names = x -> x.getName().toUpperCase(); // HARDCORE
 		
 		List<String> namesUpperCase = list.stream().map(names).collect(Collectors.toList()); // to use map() you need to convert the list to stream()
 		
