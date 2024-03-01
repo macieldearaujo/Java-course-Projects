@@ -35,7 +35,7 @@ public class Produto implements Comparable<Produto>, Consumer<Produto>{
 		return name + " $ " + String.format("%.2f", price);
 	}
 	
-	public static boolean staticProductPredicate(Produto p) {
+	public static boolean staticProductPredicate(Produto p) { // Predicate
 		return p.getPrice() >= 100.0;
 	}
 	
@@ -43,12 +43,20 @@ public class Produto implements Comparable<Produto>, Consumer<Produto>{
 		return price >= 100.0;
 	}
 	
-	public static void staticPriceUpdate(Produto p) {
+	public static void staticPriceUpdate(Produto p) { // Consumer
 		p.setPrice(p.getPrice() * 1.1);
 	}
 	
 	public void nonStaticPriceUpdate() {
 		price *= 1.1;
+	}
+	
+	public static String staticNameUpperCase(Produto p) { // Function
+		return p.getName().toUpperCase();
+	}
+	
+	public String nonStaticNameUpperCase() {
+		return name.toUpperCase();
 	}
 
 	@Override
