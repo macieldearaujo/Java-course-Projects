@@ -1,8 +1,9 @@
 package model.entities;
 
 import java.util.Objects;
+import java.util.function.Consumer;
 
-public class Produto implements Comparable<Produto>{
+public class Produto implements Comparable<Produto>, Consumer<Produto>{
 	private String name;
 	private Double price;
 	
@@ -26,6 +27,10 @@ public class Produto implements Comparable<Produto>{
 		return price;
 	}
 	
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	
 	public String priceTag() {
 		return name + " $ " + String.format("%.2f", price);
 	}
@@ -36,6 +41,14 @@ public class Produto implements Comparable<Produto>{
 	
 	public boolean nonStaticProductPredicate() { // reference method
 		return price >= 100.0;
+	}
+	
+	public static void staticPriceUpdate(Produto p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
+	
+	public void nonStaticPriceUpdate() {
+		price *= 1.1;
 	}
 
 	@Override
@@ -63,5 +76,11 @@ public class Produto implements Comparable<Produto>{
 	@Override
 	public String toString() {
 		return getName() + " " + String.format("%.2f", getPrice());
+	}
+
+	@Override
+	public void accept(Produto t) {
+		
+		
 	}
 }
