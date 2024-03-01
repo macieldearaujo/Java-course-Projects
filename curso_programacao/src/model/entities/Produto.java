@@ -29,6 +29,10 @@ public class Produto implements Comparable<Produto>{
 	public String priceTag() {
 		return name + " $ " + String.format("%.2f", price);
 	}
+	
+	public boolean ProductPredicate() { // reference method
+		return price >= 100.0;
+	}
 
 	@Override
 	public int hashCode() {
@@ -52,7 +56,8 @@ public class Produto implements Comparable<Produto>{
 		return name.compareTo(other.getName());
 	}
 	
+	@Override
 	public String toString() {
-		return "Produto [name=" + getName() + ", price=" + String.format("%.2f", getPrice()) + "]";
+		return getName() + " " + String.format("%.2f", getPrice());
 	}
 }
