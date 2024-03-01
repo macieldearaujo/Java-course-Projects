@@ -30,7 +30,11 @@ public class Produto implements Comparable<Produto>{
 		return name + " $ " + String.format("%.2f", price);
 	}
 	
-	public boolean ProductPredicate() { // reference method
+	public static boolean staticProductPredicate(Produto p) {
+		return p.getPrice() >= 100.0;
+	}
+	
+	public boolean nonStaticProductPredicate() { // reference method
 		return price >= 100.0;
 	}
 

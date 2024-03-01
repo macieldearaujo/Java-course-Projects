@@ -19,7 +19,7 @@ public class _02_Predicate {
 		list.add(new Produto("Case", 80.90));
 		list.add(new Produto("Mouse", 50.00));
 		
-		list.removeIf(Produto::ProductPredicate); // list.removeIf(x -> x <= 100)
+		list.removeIf(Produto::nonStaticProductPredicate); // list.removeIf(x -> x <= 100)
 		
 		for(Produto prod : list) {
 			System.out.println(prod);
