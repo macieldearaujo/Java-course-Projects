@@ -1,0 +1,28 @@
+package _15_lambda;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Ex001 {
+
+	public static void main(String args[]) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String path = "C:\\temp\\testing_files\\employees.csv";
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+			String[] line = br.readLine().split(",");
+			
+			while(br.next()) {
+				
+			}
+		} catch(IOException e) {
+			throw new RuntimeException(e.getMessage());
+		}
+		
+		sc.close();
+	}
+}

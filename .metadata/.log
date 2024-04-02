@@ -138,3 +138,20 @@ org.eclipse.jgit.errors.TransportException: https://github.com/macieldearaujo/Ja
 
 !ENTRY org.eclipse.egit.ui 4 0 2024-04-01 21:43:27.860
 !MESSAGE Can't connect to any repository: https://github.com/macieldearaujo/Java-course-Projects (https://github.com/macieldearaujo/Java-course-Projects: git-receive-pack not permitted on 'https://github.com/macieldearaujo/Java-course-Projects/')
+
+!ENTRY org.eclipse.egit.core 4 0 2024-04-01 22:56:44.725
+!MESSAGE An exception occurred during push on URI https://github.com/macieldearaujo/Java-course-Projects: https://github.com/macieldearaujo/Java-course-Projects: git-receive-pack not permitted on 'https://github.com/macieldearaujo/Java-course-Projects/'
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/macieldearaujo/Java-course-Projects: git-receive-pack not permitted on 'https://github.com/macieldearaujo/Java-course-Projects/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:692)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1473)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:254)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-04-01 22:56:44.727
+!MESSAGE Can't connect to any repository: https://github.com/macieldearaujo/Java-course-Projects (https://github.com/macieldearaujo/Java-course-Projects: git-receive-pack not permitted on 'https://github.com/macieldearaujo/Java-course-Projects/')
